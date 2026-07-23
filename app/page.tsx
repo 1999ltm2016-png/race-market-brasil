@@ -8,10 +8,10 @@ const plans=[
 {name:"Premium",slug:"premium",price:"69,90",text:"60 dias + destaque na Home"},
 ];
 const categorias=[
-  {name:"Motos",img:"https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=600&q=80"},
-  {name:"Capacetes",img:"https://images.unsplash.com/photo-1611004061856-ccc3cbe944b2?auto=format&fit=crop&w=600&q=80"},
-  {name:"Macac\u00f5es",img:"https://images.unsplash.com/photo-1651575474911-8e08e1f51503?auto=format&fit=crop&w=600&q=80"},
-  {name:"Pe\u00e7as & Performance",img:"https://images.unsplash.com/photo-1534755563369-ad37931ac77b?auto=format&fit=crop&w=600&q=80"},
+  {name:"Motos",slug:"motos",img:"https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=600&q=80"},
+  {name:"Capacetes",slug:"capacetes",img:"https://images.unsplash.com/photo-1611004061856-ccc3cbe944b2?auto=format&fit=crop&w=600&q=80"},
+  {name:"Macac\u00f5es",slug:"macacoes",img:"https://images.unsplash.com/photo-1651575474911-8e08e1f51503?auto=format&fit=crop&w=600&q=80"},
+  {name:"Pe\u00e7as & Performance",slug:"pecas-performance",img:"https://images.unsplash.com/photo-1534755563369-ad37931ac77b?auto=format&fit=crop&w=600&q=80"},
   ];
 
 export default async function Home(){
@@ -34,7 +34,7 @@ export default async function Home(){
 
     <section id="categorias"><div className="container">
       <h2>Explore por categoria</h2>
-      <div className="grid-4">{categorias.map(c=><div className="card" key={c.name}><div style={{height:140,borderRadius:14,overflow:"hidden",marginBottom:14}}><img src={c.img} alt={c.name} style={{width:"100%",height:"100%",objectFit:"cover"}}/></div><h3>{c.name}</h3><p className="muted">{"An\u00fancios especializados para pista e competi\u00e7\u00e3o."}</p></div>)}</div>
+      <div className="grid-4">{categorias.map(c=><a href={`/categorias/${c.slug}`} className="card" key={c.name}><div style={{height:140,borderRadius:14,overflow:"hidden",marginBottom:14}}><img src={c.img} alt={c.name} style={{width:"100%",height:"100%",objectFit:"cover"}}/></div><h3>{c.name}</h3><p className="muted">{"An\u00fancios especializados para pista e competi\u00e7\u00e3o."}</p></a>)}</div>
     </div></section>
 
     <section id="comprar"><div className="container">
