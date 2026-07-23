@@ -130,7 +130,7 @@ return <Link href={`/anuncios/${ad.id}`} className="card" key={ad.id}>
 <div style={{marginTop:24,display:"grid",gap:18}}>
 <div style={{display:"flex",gap:14,alignItems:"flex-start"}}><span style={{fontSize:20}}>📷</span><p className="muted" style={{margin:0}}>Divulgação em story no perfil @LucasTorres_77_</p></div>
 <div style={{display:"flex",gap:14,alignItems:"flex-start"}}><span style={{fontSize:20}}>👥</span><p className="muted" style={{margin:0}}>Alcance qualificado para o público automotivo</p></div>
-<div style={{display:"flex",gap:14,alignItems:"flex-start"}}><span style={{fontSize:20}}>🕐</span><p className="muted" style={{margin:0}}>Publicação por 24 horas nos stories</p></div>
+<div style={{display:"flex",gap:14,alignItems:"flex-start"}}><span style={{fontSize:20}}>🕐</span><p className="muted" style={{margin:0}}>Publicação por 1 semana nos stories</p></div>
 <div style={{display:"flex",gap:14,alignItems:"flex-start"}}><span style={{fontSize:20}}>📅</span><p className="muted" style={{margin:0}}>Postagem realizada em até 5 dias após a solicitação</p></div>
 <div style={{display:"flex",gap:14,alignItems:"flex-start"}}><span style={{fontSize:20}}>🛡️</span><p className="muted" style={{margin:0}}>Conteúdo profissional e direcionado</p></div>
 </div>
