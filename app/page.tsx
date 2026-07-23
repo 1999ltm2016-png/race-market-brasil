@@ -62,4 +62,3 @@ export default async function Home(){
     <p className="muted">Story no @LucasTorres_77_ por R$ 29,90. Serviço opcional e separado do valor do anúncio.</p></div></section>
   </>;
 }
-}
