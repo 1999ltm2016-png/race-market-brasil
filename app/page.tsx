@@ -105,6 +105,6 @@ return <Link href={`/anuncios/${ad.id}`} className="card" key={ad.id}>
 </div></section>
 
 <section><div className="container panel"><h2>Divulgação opcional no Instagram</h2>
-<p className="muted">Story no @LucasTorres_77_ por R$ 29,90. Serviço opcional e separado do valor do anúncio.</p></div></section>
+<p className="muted">Story no @LucasTorres_77_ por R$ 29,90 • Prazo de publicação: 5 dias. Serviço opcional e separado do valor do anúncio.</p></div></section>
 </>;
 }
