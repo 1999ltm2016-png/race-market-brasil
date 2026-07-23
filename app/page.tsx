@@ -104,7 +104,42 @@ return <Link href={`/anuncios/${ad.id}`} className="card" key={ad.id}>
 </div>)}</div>
 </div></section>
 
-<section><div className="container panel"><h2>Divulgação opcional no Instagram</h2>
-<p className="muted">Story no @LucasTorres_77_ por R$ 29,90 • Prazo de publicação: 5 dias. Serviço opcional e separado do valor do anúncio.</p></div></section>
+<section><div className="container">
+<div className="panel" style={{maxWidth:640,margin:"0 auto"}}>
+<div className="eyebrow">DIVULGAÇÃO EM STORY</div>
+<div style={{display:"flex",gap:20,alignItems:"center",marginTop:16,flexWrap:"wrap"}}>
+<div style={{position:"relative",width:100,height:100,flexShrink:0}}>
+<div style={{width:100,height:100,borderRadius:"50%",background:"linear-gradient(135deg,#e10600,#7b2ff7,#00c3ff)",display:"grid",placeItems:"center"}}>
+<div style={{width:88,height:88,borderRadius:"50%",background:"#0d0d10",display:"grid",placeItems:"center"}}>
+<span style={{fontSize:30,fontWeight:900,color:"#fff"}}>L<span style={{color:"#e10600"}}>T</span></span>
+</div>
+</div>
+<div style={{position:"absolute",bottom:0,right:0,width:26,height:26,borderRadius:"50%",background:"#1d9bf0",display:"grid",placeItems:"center",border:"3px solid #0d0d10"}}>
+<span style={{color:"#fff",fontSize:13}}>✓</span>
+</div>
+</div>
+<div>
+<h3 style={{margin:0}}>Story no Instagram</h3>
+<div style={{display:"flex",alignItems:"center",gap:6,marginTop:4}}>
+<strong style={{color:"#e10600"}}>@LucasTorres_77_</strong>
+<span style={{color:"#e10600"}}>✔</span>
+</div>
+</div>
+</div>
+
+<div style={{marginTop:24,display:"grid",gap:18}}>
+<div style={{display:"flex",gap:14,alignItems:"flex-start"}}><span style={{fontSize:20}}>📷</span><p className="muted" style={{margin:0}}>Divulgação em story no perfil @LucasTorres_77_</p></div>
+<div style={{display:"flex",gap:14,alignItems:"flex-start"}}><span style={{fontSize:20}}>👥</span><p className="muted" style={{margin:0}}>Alcance qualificado para o público automotivo</p></div>
+<div style={{display:"flex",gap:14,alignItems:"flex-start"}}><span style={{fontSize:20}}>🕐</span><p className="muted" style={{margin:0}}>Publicação por 24 horas nos stories</p></div>
+<div style={{display:"flex",gap:14,alignItems:"flex-start"}}><span style={{fontSize:20}}>🛡️</span><p className="muted" style={{margin:0}}>Conteúdo profissional e direcionado</p></div>
+</div>
+
+<hr style={{border:"none",borderTop:"1px solid #2a2a30",margin:"24px 0"}}/>
+
+<div className="price" style={{fontSize:32}}>R$ 29,90</div>
+<p className="muted" style={{marginTop:2}}>por divulgação</p>
+<Link className="btn btn-red full" href="/anunciar" style={{marginTop:16,display:"block",textAlign:"center"}}>Solicitar divulgação no story</Link>
+</div>
+</div></section>
 </>;
 }
